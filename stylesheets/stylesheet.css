@@ -9,6 +9,7 @@
   background-color: none;
   padding-right: none;
   border-bottom: 2px solid #c6c6c9;
+  background-color: #03041c;
 }
 
 img {
@@ -30,6 +31,7 @@ img {
   height: 100px;
   font-size: 2em;
   border-bottom: 2px solid #c6c6c9;
+  background-color: #03041c;
 }
 
 #me {
