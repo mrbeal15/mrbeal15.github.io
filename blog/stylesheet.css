@@ -1,0 +1,32 @@
+body {
+  background-color: #03041c;
+  color: #c6c6c9;
+  font-family: pt sans;
+}
+
+p {
+  text-align: center;
+}
+
+ul {
+  margin-left: 0;
+  margin-right: 0;
+  margin: auto;
+  width: 370px;
+}
+
+span {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.home {
+  margin-left: 32%;
+  width: 100px;
+  background-color: none;
+  margin-top: 100%;
+}
