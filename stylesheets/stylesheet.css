@@ -26,9 +26,9 @@ img {
   position: fixed;
   top: 0%;
   left: 0%;
-  text-align: left;
   width: 40%;
   height: 100px;
+  text-align: left;
   font-size: 2em;
   border-bottom: 2px solid #c6c6c9;
   background-color: #03041c;
