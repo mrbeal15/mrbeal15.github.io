@@ -1,41 +1,59 @@
-[Week 2 Home](./)
+<!DOCTYPE html>
+<head>
+  <title>Classes vs. IDs</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
 
-# U1.W2: Technical Blog
+<main>
+  <h1>Technical Blog - No. 2</h1>
+  <h2>Classes vs. IDs</h2>
+  <h4>8/9/15</h4>
 
-## Learning Competencies
-- Compare CSS concepts
-- Explain how and when to use CSS concepts
+  <section>
+    <p>
+      This week in DBC, we worked with HTML and CSS, two very important components when it comes to building websites. If the website were a human body, HTML would be the bones, and CSS would be the skin. HTML provides the structure of the website, what text/pictures will be displayed, where they are displayed, links, and all that jazz. Whereas CSS is what provides the styling and flair. Without CSS, web pages would still be functional, they would just be extremely plain and boring.
+    </p>
+    <p>
+        In dealing with CSS, there are three parts. The selector, the property, and the value.
+        For example, if I wanted to change all of the h2 headings to have a blue font I would use:
 
-## Summary:
-You've spent the week working with HTML and CSS and probably found yourselves frustrated by a few concepts in the process. Hopefully this blog assignment will help you with one of those concepts.
+           h2 {
+              color: blue;
+         }
 
-## Release 0: Copy your blog template
-In your `blog` directory, create a new HTML file and name it `t2-css-design.html`. Copy the code from your `blog_template.html`.
+          where h2 is the selector, color is the property and blue is the value. This will turn every h2 tag in the HTML document blue. Well, what if you don't want to turn everything blue. What if I just wanted to change three h2 tags, or just one h2 tag blue? That is where classes and IDs come into play. A class is used when you want to change selected elements that share the same type tag. Like I mentioned earlier, if you have 6 h2 tags, and you want to change 3 of them to have a blue font, you can use a class, which works like this.
 
-## Release 1: Select a Topic
-Research one of the following topics:
+            In the HTML document, in the h2 tags that you would like to change blue you'll add a class attribute to those tags:
 
-- What is the difference between Margin, Border, and Padding?
-- What are the best practices associated with using classes vs. ids?
-- What are the differences between relative, absolute, and fixed positioning?
-- What does it mean to display inline vs inline blocks?
+                <p> &lth2 class="blue"&gt </p>
 
-## Release 2: Blog!
-Write a blog post that teaches others how and when to use each thing. There is no length requirement, but it should show off the knowledge you gained this week. You should show examples of code and screen shots to help teach others!
+            Everything in between the opening h2 tag and the closing h2 tag will then be given the class "blue".
 
-**HINT:** Intend your blog for a non-technical audience. Imagine explaining to a non-technical friend, for instance. Try to take a person step-by-step through understanding one of the topics above.
+            Now, in your CSS document, you'll call the class selector with a period, set the property to color, and then set the value to blue, like this:
+                  .class {
+                      color: blue;
+                }
+            Everything that has a class blue, will now have blue text.
+    </p>
+    <p>
+        Now for IDs. IDs are a little different in that they have a heavier specificity value than classes and can only be applied to one unique element. So unlike our h2 tags with the class of blue, we would only be able to change one h2 element to blue. This makes it easier to change, for instance, one of the blue h2 elements without changing them all. Say that we wanted to make one of the three h2 tags have a bold font, but not the other two. This is when an ID would come in handy. Since an ID has a higher specificity value, it would take precedence over the class. We would set it like this:
 
-## Release 3: Publish
-Now is the time to add your files to your blog/index.html file. You'll need to link the posts from Week 1 as well. So by the end of this week, there should be links to three posts on either a blog/index.html page.
+             <p>&lth2 id="bold"&gt</p>
 
-## Release 4: Promote
+        and everything between this h2 tag and the closing one will be bold.
 
-Now it's time to show off your work and share your knowledge with your cohort mates using Twitter!
+        In the CSS document we call the bold id like this:
+            #id {
+              color: blue;
+              font-weight: bold;
+          }
+        This will give the h2 element with the ID of bold, a bold text.
+    </p>
 
-Tweet your blog post using the hashtag **#DBCCSS**.
-
-## Release 5: Read
-
-Read at least one post for each topic (except for the one you wrote about). Give the author A.S.K (Actionable, Specific, and Kind) feedback in a tweet!
-
+    <p>
+      One of the creeds that developers live by is D.R.Y, Don't Repeat Yourself. Classes allow you to apply a certain style to multiple elements without going and changing each individual element. IDs come in handy when you have one element that you would like to style, since you can only apply a certain ID to just one element.
+    </p>
+  </section>
+</main>
 
