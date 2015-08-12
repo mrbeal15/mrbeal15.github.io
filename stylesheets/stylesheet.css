@@ -1,4 +1,11 @@
-.header {
+header{
+  position: fixed;
+  background-color: #03041c;
+  border-bottom: 2px solid #c6c6c9;
+  height: 100px;
+  width: 100%;
+}
+.name {
   position:fixed;
   top: 0%;
   right: 0%;
@@ -6,10 +13,6 @@
   width: 60%;
   text-align: right;
   font-size: 4em;
-  background-color: none;
-  padding-right: none;
-  border-bottom: 2px solid #c6c6c9;
-  background-color: #03041c;
 }
 
 img {
@@ -30,8 +33,6 @@ img {
   height: 100px;
   text-align: left;
   font-size: 2em;
-  border-bottom: 2px solid #c6c6c9;
-  background-color: #03041c;
 }
 
 #me {
