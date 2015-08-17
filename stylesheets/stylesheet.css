@@ -35,12 +35,11 @@ img {
   left: 1%;
   width: 60%;
   height: 45px;
-  text-align: center;
+  text-align: left;
   font-size: 2em;
   padding-left: 0px;
   padding-top: 15px;
   color: #c6c6c9;
-  border-bottom: 2px solid #c6c6c9;
 }
 
 #me {
@@ -80,7 +79,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline 2px solid #c6c6c9;
   color: #c6c6c9;
 }
 
