@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <title>Technical Blog #3</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Technical Blog #3</h1>
+  <h2>Arrays vs. Hashes</h2>
+  <h4>8/15/15</h4>
+
+  <section>
+    <p>
+      Although arrays and hashes appear to be similar at first glance, they are quite different and serve different purposes within Ruby, without deviating too far from each other. They are both used to store some sort of data. They both are indexed, and called on the same scale(array[0] and hash[0]). They both can be modified, whether it is adding something to the current array or hash, or taking something out. And lastly, they are both objects within the Ruby language.
+    </p>
+    <p>
+        For all of their similarities, they are still quite different. Yes, they both store bits of data, but if dive a little deeper, we start to find some differences. An array, is a structure within Ruby that stores strings, integers, really any type of data within it. Everything store in the array is indexed and can be accessed if you what position the data is that you would like to access. For example, if I had an array that stored the following data:
+          array = ['red', 1, true, 1455, 'let/'s learn about arrays']
+
+        To access the data in the array, each piece of data is indexed beginning with 0. So if I wanted to pull the string red out of the array, I would enter array[0]. Every element within the array is the succeeding number, so to pull 1 out of the array, I would do array[1], and to pull out 'let's learn about arrays' I would enter in array[4] or array[-1](you can access the last item in an array by putting in [-1] as the index, and every element from there will be minus 1). Arrays are helpful when you have one type of data that isn't tied to another piece of data.
+    </p>
+    <p>
+        However, what if you had a piece of data that had a corresponding piece of data with it. For example, a username and a password. Or a credit card number and a password. I suppose you could have one array that stores the usernames and credit card numbers and then another array that stores the passwords or pin numbers, but rather than going through all of that work, you can create a hash. A hash is a way to store a piece of data that also has a corresponding piece of data. It takes a key, and then for each key it will also store a value. So for every username(key), you can also store a password(value.) For every credit card(key) you can also store a pin number(value). Hashes come in handy when you have data that needs to stay tied together, and they make it easy to access either the key or the value when given one or the other.
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
