@@ -13,3 +13,8 @@ body {
   width: 200px;
   bottom: 10px;
 }
+
+a {
+  margin-left: auto;
+  margin-right: auto;
+}
