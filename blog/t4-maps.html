@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <title>Technical Blog #4</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Technical Blog Post #4</h1>
+  <h2>The Enumerable map and map!</h2>
+  <h4>8/23/15</h4>
+
+  <section>
+    <p>
+      One of the things that I find the curriculum having us do more frequently, is using enumerables to iterate over arrays, or taking each element in the array and doing something to it. Once you perform some action to the elements of the array, whether that be sorting or adding 2 to each element, you can either replace the original array with the modified elements or you can create a new array.
+    </p>
+    <p>
+        Although map and map! ultimately do the same thing, there is a key difference in the two. When one calls the map method, they are calling it non-destructively. This means that it will go through each element within the array, modify it according to the code block, and then return a new array with the modified elements in it, leaving the original array and elements intact. So if I had an array called 'age' that had [12, 144, 18] and I would use the map method to iterate over it like so:
+            <br>a.map {|x| x += 5}<br>
+        It would return a new array with the values 17, 149, and 23 in it(the code block said to add 5 to each element in the array), but we could still access the original array 'age'.
+    </p>
+    <p>
+        The map method also has it's destructive counterpart, that we can call, pass the elements through a code block, and then replace the original array elements after they have been modified according to the code block. We do this with a exclamation mark, or a 'bang'. So if we called the same method to the age array but this time called it like this:
+          <br>a.map! {|x| x += 5}<br>
+        we would get an identical array to the array we got whenever we didn't use a bang, the only difference is with the bang, we replace the original values in age. So when using the destructive methods, always exercise caution because they are their name more times than not.
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
