@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <title>Technical Blog Post #5</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/../stylesheets/entry_stylesheet.css">
+</head>
+
+<main>
+  <h1>Technical Blog Post #5</h1>
+  <h2>Classes</h2>
+  <h4>8/23/15</h4>
+
+  <section>
+    <p>
+      Classes, on the surface, can seem a little daunting, come in handy when building programs. One of the best analogies I've heard describing classes is to think of them as individual Legos pieces. You can pick the Legos that you want to use, and then build something using them. Each individual Lego serves it's purpose, but still works with with other individual Lego pieces to build something.    </p>
+    <p>
+      If I wanted to build a program that stored a user's name, and also returned a message with that users' name in it. I could build it all in one class, but design prinicples say that each class should be as basic as possible and should only really do one thing. That way, when the class needs to be altered in the future, due to whatever reason, the changes can be easily found and only alter the pieces of code that need to be altered. But that's another lesson. So, our program could ultimately be built using two classes. A class that stores the user's name, and then a class that prints a greeting to the screen.
+      <br>
+      class Name #<--- This will create a class with the name 'Name'
+        attr_reader :name
+          def initialize
+            @name = 'Matt'
+          end
+      end
+      <br>
+      So we have created a Name class that uses the attribute reader (getter) to access the name variable outside of the Name class. We then use the initialize method, which applies whatever is in the method everytime the class is called, to set a variable to a name. We then end the initialize method, and then end the class.
+      <br>
+      class Greeting
+
+        def initialize
+          @name_2 = Name.new
+        end
+        def greet
+          p "Hello, #{@name_2.name}. How are you doing today?"
+        end
+      end
+      <br>
+      For the Greeting class, we build is similarly to the Name class, except we won't need an attribute_reader since we won't be trying to access any variables in the Greeting class outside of it. We will define our intialize method and set it to an instance of the Name class. So every time that we run the Greeting class, it will create a new instance of the Name class and store it to the @name_2 variable. We then create a greet method, that takes the instance of the Name class that was created in the Greeting's intialize method, and calls the reader attribute to return the variable for name.
+      <br>
+      test = Greeting.new
+      test.greet
+      <br>
+      To get the program to print the line in the Greeting's greet method, we need to create an instance of the Greeting class by setting whatever we cant to call the instance to Greeting.new. For this example we name our instance "test". We then call the greet method on the new instance 'test' and that should print "Hello, Matt. How are you doing today?"
+    </p>
+    <p>
+      Classes are definitely tough to grasp, because ultimately everything in Ruby is already a class. Strings, Arrays, everything is a class, and each individual class can respond to a certain group of methods based on what type of class it is. So making sure that you understand exactly what each class you use, when building something, does and also making sure that everything inside of the class is related to the class itself, helps make code easier to read and more malleable.
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
