@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <title>Technical Blog #6</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/../stylesheetse/entry-stylesheet.css">
+</head>
+
+<main>
+  <h1>Technical Blog #6</h1>
+  <h2>OOP Concepts - Blocks, Procs and Lambdas</h2>
+  <h4>9/6/15</h4>
+
+  <section>
+    <p>
+      Blocks, procs and lambdas make look similar when called, and for the most part act the same, but do offer different things. As of now, I haven't yet encountered a situation where I have had to choose one of the three based on the situation, but I thought that it would be good to get an idea of what their differences are.
+    </p>
+    <p>
+      A block is basically just a set of instructions that you can pass to a method. For example, if we have an array, 'a' and 'a' contains [1, 2, 3]. If we called the each method,
+      <br>
+      a.each {|x| x * 2}
+      <br>
+      each is going to iterate over all of the elements in the array and then it is going to pass them through the block. The block is everything within in the {}. We assign a placeholder for all of the elements between the bars, and then what we'll do to each element. For this block we'll take each element and multiply it by 2, so this should return an array with the elements [2, 4, 6].
+      One of the key differences between blocks and procs/lambdas is that procs/lambdas are objects and blocks are not. You can set a proc or lambda do a variable or call it using different methods, but you cannot do the same with a block.
+    </p>
+    <p>
+      Procs and Lambdas, as mentioned earlier are both objects. They are essentially the same except for a few minor details. They also resemble blocks in that they can be used to iterate over arrays and apply a set of instructions to each element in the array. If we used our 'a' array from earlier, we could apply the same instructions using a proc:
+      <br>
+      p = Proc.new {|x| x*2}
+      a.each(&p)
+      <br>
+      should return the same array of [2, 4, 6].
+      The same goes for lambdas:
+      <br>
+      lam = lambda {|x| x * 2}
+      a.each(&lam)
+      <br>
+      should also return an array o f[2, 4, 6].
+      So as you can see, procs and lambdas are both blocks except they come in the form of an object.
+    </p>
+    <p>
+      So now the difference between procs and lambdas. Although I only had a limited amount of time to try to figure out the difference of the two, I kept finding one key difference in each of the resources that I used and it had to do with the number of arguments. For lambdas, if the number of arguments that you try to pass it doesn't match the number of arguments the lambda is able to accept, it will return an error. However, with procs, if you try to do the same, it will stop at the number of arguments that it is able to take, without returning an error. Since a lambda is a type of proc, if you call the class method on lambda, it will return proc, the object id and then (lambda).
+    </p>
+    <p>
+      The more subjects we encounter, the more that I see that there are multiple ways to essentially do the same thing. And for the most part, the differences in these approaches are relatively small. I think it's really just going to take an enormous amount of practice to get to where I feel comfortable in recognizing when to use what whether it be a proc or a lambda.
+    </p>
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+  <section class="footer">
+    <a href="/../index.html">Home |</a>
+    <a href="/blog/blog_index.html"> Back</a>
+  </section>
+</main>
+
