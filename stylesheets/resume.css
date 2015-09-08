@@ -1,0 +1,21 @@
+body {
+  background-color: #03041c;
+  color: #c6c6c9;
+  font-family: pt sans, sans-serif;
+}
+
+h2 {
+  width: 90px;
+  text-align: center;
+  border: 2px solid #c6c6c9;
+}
+
+p {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: #c6c6c9;
+  font-family: pt sans, sans-serif;
+}
