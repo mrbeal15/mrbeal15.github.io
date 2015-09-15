@@ -4,6 +4,10 @@ body {
   font-family: pt-sans, sans-serif;
 }
 
+main{
+  line-height: 1.5em;
+  margin: 10%;
+}
 .footer a {
   color: #c6c6c9;
   font-family: pt-sans, sans-serif;
