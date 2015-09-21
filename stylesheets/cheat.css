@@ -1,0 +1,54 @@
+body {
+  background-color: #03041c;
+  color: #c6c6c9;
+  font-family: pt sans, sans-serif;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+table{
+  border: 2px solid #c6c6c9;
+  background-color: #c6c6c9;
+  color: #03041c;
+}
+
+.ruby_array {
+
+  float: left;
+  width: 48%;
+  height: 220px;
+}
+
+.ruby_hash {
+
+  float: right;
+  width: 48%;
+  height: 220px;
+}
+
+.array_js {
+
+  float: left;
+  width: 48%;
+  height: 235px;
+  margin-bottom: 5%;
+}
+
+.objects_js {
+
+  float: right;
+  width: 48%;
+  height: 235px;
+  margin-bottom: 5%;
+}
+
+.title{
+  text-align: center;
+  text-decoration: underline;
+}
+
+section {
+
+  clear: both;
+  padding-top: 1px;
+}
