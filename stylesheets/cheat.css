@@ -52,3 +52,13 @@ section {
   clear: both;
   padding-top: 1px;
 }
+
+.footer a {
+  color: #c6c6c9;
+  font-family: pt-sans, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  bottom: 10px;
+}
