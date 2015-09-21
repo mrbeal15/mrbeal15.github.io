@@ -6,10 +6,12 @@ body {
   margin-right: 2em;
 }
 
-main{
-  line-height: 1.5em;
-  margin: 10%;
+img {
+  background-color: white;
+  height: 250px;
+  width: 250px;
 }
+
 .footer a {
   color: #c6c6c9;
   font-family: pt-sans, sans-serif;
@@ -19,7 +21,4 @@ main{
   width: 200px;
   bottom: 10px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> new-branch
