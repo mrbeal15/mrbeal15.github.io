@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+  <html>
+    <head>
+      <title>Cheat Sheet</title>
+        <link type="text/css" rel="stylesheet" href="/Users/mattbeal/Desktop/dbc/mrbeal15.github.io/stylesheets/cheat.css">
+    </head>
+
+    <body>
+      <h1>CHEAT SHEET</h1>
+      <h2>Accessing elements in Arrays, Hashes, and Objects</h2>
+      <p>Iterating over data structures is something that we have had to do a lot, and when dealing with multiple languages it's handy to have a one-stop-shop for the different ways to iterate and access data in different structures</p>
+    <table class="ruby_array">
+      <tr>
+        <td class="title">Iterating Over Arrays in Ruby</td>
+      <tr>
+      <tr>
+        <td>One of the most common methods used to iterate over structures in Ruby is the each method:</td>
+      </tr>
+      <tr>
+        <td> array.each do |x| <br>
+          array.reverse <br>
+          end </td>
+      </tr>
+      <tr>
+        <td>This takes each element in the array assigns it a placeholder of 'x', and then executes the block in the each method. In this instance, it is taking every element in the array and reversing it.</td>
+      </tr>
+    </table>
+    <table class="ruby_hash">
+      <tr>
+        <td class="title">Iterating Over Hashes in Ruby</td>
+      </tr>
+      <tr>
+        <td>Just like arrays, Hashes have an each method as well that allows us to manipulate both the key and the value in an hash</td>
+      </tr>
+      <tr>
+        <td> hash.each do |k, v| <br>
+          k.upcase <br>
+          v.downcase <br>
+          end
+        </td>
+      </tr>
+      <tr>
+        <td>This takes each key in the hash and gives it a placeholder 'k', and then takes each key's values and gives them a placeholder 'v'. It then executes the block of code on the key, value or both.</td>
+      </tr>
+    </table>
+    <section>
+      <p>When using the each method, you can either put the block of code on one sinlge line, or use multiple lines like above. If you use one line, you can place everything inside curly braces like: array.each {|x| x.upcase}</p>
+      <p>Another common way to iterate is to use the map/map! methods. These methods take the elements in the original array and copies them into a new array. The destructive version of the map method, map!, takes those elements and replaces the original array.</p>
+    </section>
+    <table class="array_js">
+      <tr>
+        <td class="title">Iterating over an Array in JavaScript</td>
+      </tr>
+      <tr>
+        <td>Javascript doesn't have a built in function like Ruby, so iterating over arrays takes a little more effort, but here is an effective way to do it</td>
+      </tr>
+      <tr>
+        <td>while(i=0; i < array.length; i++){<br>
+          array[i].reverse();<br>
+        }</td>
+      </tr>
+      <tr>
+        <td>This uses a counter to go through each element in the array, and for each element it adds 1 to the counter. It will continue going through the array as long as the counter, 'i', is less than the array length.</td>
+      </tr>
+    </table>
+    <table class="objects_js">
+      <tr>
+        <td>JavaScript also has objects, that resemble Ruby hashes in that they have properties and values. The properties and values of objects can be accessed, regardless of how nested the properties are.</td>
+      </tr>
+      <tr>
+        <td>friends = {<br>
+          Jim: {age: 26, school: "OU"},<br>
+          Steve: {age: 30, school: "OSU"},<br>
+          "Kim": {age: 22, "school": "Tulsa"},<br>
+          "Carla": {age: 25, "school": "ORU"}<br>
+        }</td>
+      </tr>
+      <tr>
+        <td>To access Steve's school using dot notation: friends.Steve.school<br>
+        To access Carla's school using bracket notation: friends["Carla"]["age"]</td>
+      </tr>
+    </table>
+    </body>
