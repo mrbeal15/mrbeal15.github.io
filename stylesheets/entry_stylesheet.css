@@ -1,6 +1,6 @@
 body {
-  background-color: #03041c;
-  color: #c6c6c9;
+  background-color: #5c6874;
+  color: #03041c;
   font-family: pt-sans, sans-serif;
   margin-left: 2em;
   margin-right: 2em;
@@ -13,7 +13,7 @@ img {
 }
 
 .footer a {
-  color: #c6c6c9;
+  color: #03041c;
   font-family: pt-sans, sans-serif;
   font-size: 20px;
   text-decoration: none;
