@@ -93,3 +93,15 @@ text-align: center;
   border-top: 2px solid #c6c6c9;
 }
 
+footer > div {
+  display: inline;
+  height: 10px;
+  width: 10px;
+  margin-right: 1%;
+}
+
+footer > div > a > img {
+  height: 30px;
+  width: 30px;
+  margin-top: 1%;
+}
