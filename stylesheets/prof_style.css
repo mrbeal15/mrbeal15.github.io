@@ -1,0 +1,150 @@
+body {
+  background-color: #5c6874;
+  font-family: pt sans, sans-serif;
+  color: #03041c;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-right: 0%;
+  margin-left: 0%;
+}
+
+.header {
+  font-size: 3em;
+  width: 100%;
+  text-align: center;
+  height: 1.25em;
+}
+
+.nav {
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+  height: 1.25em;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid #03041c;
+}
+aside > a {
+  text-align: center;
+}
+
+aside > span {
+  border-bottom: 2px solid #03041c;
+}
+aside {
+  background-color: #5c6874;
+  color: #03041c;
+  height: 40em;
+  width: 12em;
+}
+.about{
+  margin-left: auto;
+  margin-right: auto;
+  top: 0%;
+  text-align: center;
+  width: 400px;
+}
+
+span {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+.left {
+  float: left;
+}
+
+.right{
+  float: right;
+  border-left: 2px solid #03041c;
+}
+
+.one {
+  position: fixed;
+  background-color: #5c6874;
+  bottom: 0%;
+  width: 50%;
+  left: 0%;
+  height: 2.5em;
+  border-top: 2px solid #03041c;
+}
+
+.two {
+  position: fixed;
+  background-color: #5c6874;
+  bottom: 0%;
+  width: 50%;
+  right: 0%;
+  height: 2.5em;
+  text-align: right;
+  border-top: 2px solid #03041c;
+}
+
+.red > img{
+  height: 160px;
+  width: 170px;
+  background-color: purple;
+
+}
+
+.blue > img{
+  height: 160px;
+  width: 170px;
+  background-color: orange;
+
+}
+
+.green > img{
+  height: 160px;
+  width: 170px;
+  background-color: green;
+
+}
+
+.yellow > img{
+  height: 160px;
+  width: 170px;
+  background-color: yellow;
+}
+
+section {
+
+  height: 50px;
+  width: 225px;
+}
+
+section > div {
+  height: 160px;
+  width: 170px;
+  border-right: 2px solid #03041c;
+  border-bottom: 2px solid #03041c;
+}
+
+.pic {
+  height: 160px;
+  width: 164px;
+}
+
+footer > div {
+  display: inline;
+  height: 10px;
+  width: 10px;
+  margin-right: 1%;
+}
+
+footer > div > a > img {
+  height: 30px;
+  width: 30px;
+  margin-top: 1%;
+}
+
+
+footer > a {
+  font-size: 1.5em;
+  color: #03041c;
+  text-decoration: none;
+}
+
+a {
+  color: #03041c;
+  text-decoration: none;
+}
