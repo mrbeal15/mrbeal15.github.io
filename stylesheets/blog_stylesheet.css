@@ -72,3 +72,24 @@ table {
 text-align: center;
 }
 
+.one {
+  position: fixed;
+  background-color: #03041c;
+  bottom: 0%;
+  width: 50%;
+  left: 0%;
+  height: 2.5em;
+  border-top: 2px solid #c6c6c9;
+}
+
+.two {
+  position: fixed;
+  background-color: #03041c;
+  bottom: 0%;
+  width: 50%;
+  right: 0%;
+  height: 2.5em;
+  text-align: right;
+  border-top: 2px solid #c6c6c9;
+}
+
