@@ -1,7 +1,7 @@
 body {
-  background-color: #5c6874;
+  background-color: #03041c;
   font-family: pt sans, sans-serif;
-  color: #03041c;
+  color: #c6c6c9;
   margin-top: 0%;
   margin-bottom: 0%;
   margin-right: 0%;
@@ -22,18 +22,18 @@ body {
   height: 1.25em;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 2px solid #03041c;
+  border-bottom: 2px solid #c6c6c9;
 }
 aside > a {
   text-align: center;
 }
 
 aside > span {
-  border-bottom: 2px solid #03041c;
+  border-bottom: 2px solid #c6c6c9;
 }
 aside {
-  background-color: #5c6874;
-  color: #03041c;
+  background-color: #03041c;
+  color: #c6c6c9;
   height: 40em;
   width: 12em;
 }
@@ -55,28 +55,28 @@ span {
 
 .right{
   float: right;
-  border-left: 2px solid #03041c;
+  border-left: 2px solid #c6c6c9;
 }
 
 .one {
   position: fixed;
-  background-color: #5c6874;
+  background-color: #03041c;
   bottom: 0%;
   width: 50%;
   left: 0%;
   height: 2.5em;
-  border-top: 2px solid #03041c;
+  border-top: 2px solid #c6c6c9;
 }
 
 .two {
   position: fixed;
-  background-color: #5c6874;
+  background-color: #03041c;
   bottom: 0%;
   width: 50%;
   right: 0%;
   height: 2.5em;
   text-align: right;
-  border-top: 2px solid #03041c;
+  border-top: 2px solid #c6c6c9;
 }
 
 .red > img{
@@ -115,8 +115,8 @@ section {
 section > div {
   height: 160px;
   width: 170px;
-  border-right: 2px solid #03041c;
-  border-bottom: 2px solid #03041c;
+  border-right: 2px solid #c6c6c9;
+  border-bottom: 2px solid #c6c6c9;
 }
 
 .pic {
@@ -140,11 +140,11 @@ footer > div > a > img {
 
 footer > a {
   font-size: 1.5em;
-  color: #03041c;
+  color: #c6c6c9;
   text-decoration: none;
 }
 
 a {
-  color: #03041c;
+  color: #c6c6c9;
   text-decoration: none;
 }
